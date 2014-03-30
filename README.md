@@ -1,4 +1,4 @@
 vexyz.github.io
 ===============
 
-Vexyz Homepage
+Vexyz project site
