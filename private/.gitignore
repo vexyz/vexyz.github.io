@@ -2,6 +2,7 @@
 *.log
 
 # sbt specific
+.cache
 .cache/
 .history/
 .lib/
@@ -17,3 +18,4 @@ project/plugins/project/
 .worksheet
 .classpath
 .project
+.settings
