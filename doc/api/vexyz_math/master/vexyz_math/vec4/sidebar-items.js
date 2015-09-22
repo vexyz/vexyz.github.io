@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["Vec4Ops",""]],"struct":[["Vec4","4-dimensional vector with floating point `x`, `y`, `z`, and `w` components."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Vec3","3-dimensional vector with floating point `x`, `y`, and `z` components."]],"trait":[["Vec3Ops",""]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["Vec2iOps",""]],"struct":[["Vec2i","2-dimensional vector with integer `x`, and `y` components."]]});

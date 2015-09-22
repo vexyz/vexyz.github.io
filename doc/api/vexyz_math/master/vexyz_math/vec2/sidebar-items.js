@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Vec2","2-dimensional vector with floating point `x`, and `y` components."]],"trait":[["Vec2Ops",""]]});

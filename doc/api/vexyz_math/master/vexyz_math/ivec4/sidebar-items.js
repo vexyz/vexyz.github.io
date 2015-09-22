@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Vec4i","4-dimensional vector with integer `x`, `y`, `z`, and `w` components."]],"trait":[["Vec4iOps",""]]});

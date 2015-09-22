@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Vec3b","3-dimensional vector with boolean `x`, `y`, and `z` components."]]});

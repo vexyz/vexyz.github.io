@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Vec3b` struct in crate `vexyz_math`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Vec3b">
+
+    <title>vexyz_math::Vec3b - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>vexyz_math</a></p><script>window.sidebarCurrent = {name: 'Vec3b', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>vexyz_math</a>::<wbr><a class='struct' href=''>Vec3b</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-905' href='../src/vexyz_math/bvec3.rs.html#13'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Vec3b {
+    // some fields omitted
+}</pre><div class='docblock'><p>3-dimensional vector with boolean <code>x</code>, <code>y</code>, and <code>z</code> components.</p>
+
+<p>Vectors can also represent colors with the help of
+<code>r()</code>, <code>g()</code>, and <code>b()</code> accessors.</p>
+
+<p>Most operators and methods on vectors are performed in component-wise fashion. The notable
+exception is vector-matrix multiplication.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='method.new' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new' class='fnname'>new</a>(x: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>, y: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>, z: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; Self</code></h4>
+<div class='docblock'><p>Constructs a new <code>Vec3b</code>.</p>
+</div><h4 id='method.x' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.x' class='fnname'>x</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Component accessor, returns the 1st component of the vector.</p>
+</div><h4 id='method.y' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.y' class='fnname'>y</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Component accessor, returns the 2nd component of the vector.</p>
+</div><h4 id='method.z' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.z' class='fnname'>z</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Component accessor, returns the 3rd component of the vector.</p>
+</div><h4 id='method.r' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.r' class='fnname'>r</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Color-style component accessor, returns the 1st component of the vector.</p>
+</div><h4 id='method.g' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.g' class='fnname'>g</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Color-style component accessor, returns the 2nd component of the vector.</p>
+</div><h4 id='method.b' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.b' class='fnname'>b</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Color-style component accessor, returns the 3rd component of the vector.</p>
+</div><h4 id='method.all' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.all' class='fnname'>all</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Returns true if all components of the vector are true, false otherwise.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='macro'>assert</span><span class='macro'>!</span>(<span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>true</span>, <span class='boolval'>true</span>).<span class='ident'>all</span>());
+<span class='macro'>assert</span><span class='macro'>!</span>(<span class='op'>!</span><span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>).<span class='ident'>all</span>());
+</pre>
+</div><h4 id='method.any' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.any' class='fnname'>any</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Returns true if at least one of the vector components is true, false otherwise.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='macro'>assert</span><span class='macro'>!</span>(<span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>false</span>, <span class='boolval'>true</span>, <span class='boolval'>false</span>).<span class='ident'>any</span>());
+<span class='macro'>assert</span><span class='macro'>!</span>(<span class='op'>!</span><span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>false</span>, <span class='boolval'>false</span>, <span class='boolval'>false</span>).<span class='ident'>any</span>());
+</pre>
+</div><h4 id='method.not' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.not' class='fnname'>not</a>(&amp;self) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Performs component-wise negation of the vector, returning a new vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>);
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>u</span>.<span class='ident'>not</span>(), <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>false</span>, <span class='boolval'>true</span>, <span class='boolval'>false</span>));
+</pre>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Display.html' title='core::fmt::Display'>Display</a> for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Display.html#method.fmt' class='fnname'>fmt</a>(&amp;self, f: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.Index.html' title='core::ops::Index'>Index</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.index' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.Index.html#method.index' class='fnname'>index</a>&lt;'a&gt;(&amp;'a self, i: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>) -&gt; &amp;'a <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<div class='docblock'><p>Index notation for acessing components of a vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>);
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>u</span>, <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='ident'>u</span>[<span class='number'>0</span>], <span class='ident'>u</span>[<span class='number'>1</span>], <span class='ident'>u</span>[<span class='number'>2</span>]));
+</pre>
+
+<h1 id="panics" class='section-header'><a
+                           href="#panics">Panics</a></h1>
+<p>Will panic if the index is greater than 2.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a, 'b&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html' title='core::ops::BitAnd'>BitAnd</a>&lt;&amp;'b <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitand' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html#method.bitand' class='fnname'>bitand</a>(self, rhs: &amp;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Performs logical <em>and</em> between each component of the <code>lhs</code> vector
+and the corresponding component of the <code>rhs</code> vector, producing a new vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>) <span class='kw-2'>&amp;</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>true</span>, <span class='boolval'>false</span>);
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>u</span>, <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span> <span class='kw-2'>&amp;</span> <span class='boolval'>true</span>, <span class='boolval'>false</span> <span class='kw-2'>&amp;</span> <span class='boolval'>true</span>, <span class='boolval'>true</span> <span class='kw-2'>&amp;</span> <span class='boolval'>false</span>));
+</pre>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html' title='core::ops::BitAnd'>BitAnd</a>&lt;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitand' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html#method.bitand' class='fnname'>bitand</a>(self, rhs: <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>lhs &amp; &amp;rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'b&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html' title='core::ops::BitAnd'>BitAnd</a>&lt;&amp;'b <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitand' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html#method.bitand' class='fnname'>bitand</a>(self, rhs: &amp;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs &amp; rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html' title='core::ops::BitAnd'>BitAnd</a>&lt;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitand' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html#method.bitand' class='fnname'>bitand</a>(self, rhs: <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs &amp; &amp;rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html' title='core::ops::BitAnd'>BitAnd</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitand' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html#method.bitand' class='fnname'>bitand</a>(self, rhs: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Performs logical <em>and</em> between each component of a vector
+and a scalar, producing a new vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>) <span class='kw-2'>&amp;</span> <span class='boolval'>true</span>;
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>u</span>, <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span> <span class='kw-2'>&amp;</span> <span class='boolval'>true</span>, <span class='boolval'>false</span> <span class='kw-2'>&amp;</span> <span class='boolval'>true</span>, <span class='boolval'>true</span> <span class='kw-2'>&amp;</span> <span class='boolval'>true</span>));
+</pre>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html' title='core::ops::BitAnd'>BitAnd</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitand' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitAnd.html#method.bitand' class='fnname'>bitand</a>(self, rhs: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs &amp; rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a, 'b&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html' title='core::ops::BitOr'>BitOr</a>&lt;&amp;'b <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html#method.bitor' class='fnname'>bitor</a>(self, rhs: &amp;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Performs logical <em>or</em> between each component of the <code>lhs</code> vector
+and the corresponding component of the <code>rhs</code> vector, producing a new vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>) <span class='op'>|</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>true</span>, <span class='boolval'>false</span>);
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>u</span>, <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span> <span class='op'>|</span> <span class='boolval'>true</span>, <span class='boolval'>false</span> <span class='op'>|</span> <span class='boolval'>true</span>, <span class='boolval'>true</span> <span class='op'>|</span> <span class='boolval'>false</span>));
+</pre>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html' title='core::ops::BitOr'>BitOr</a>&lt;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html#method.bitor' class='fnname'>bitor</a>(self, rhs: <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>lhs | &amp;rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'b&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html' title='core::ops::BitOr'>BitOr</a>&lt;&amp;'b <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html#method.bitor' class='fnname'>bitor</a>(self, rhs: &amp;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs | rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html' title='core::ops::BitOr'>BitOr</a>&lt;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html#method.bitor' class='fnname'>bitor</a>(self, rhs: <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs | &amp;rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html' title='core::ops::BitOr'>BitOr</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html#method.bitor' class='fnname'>bitor</a>(self, rhs: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Performs logical <em>or</em> between each component of a vector
+and a scalar, producing a new vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>) <span class='op'>|</span> <span class='boolval'>true</span>;
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>u</span>, <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span> <span class='op'>|</span> <span class='boolval'>true</span>, <span class='boolval'>false</span> <span class='op'>|</span> <span class='boolval'>true</span>, <span class='boolval'>true</span> <span class='op'>|</span> <span class='boolval'>true</span>));
+</pre>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html' title='core::ops::BitOr'>BitOr</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitOr.html#method.bitor' class='fnname'>bitor</a>(self, rhs: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs | rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a, 'b&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html' title='core::ops::BitXor'>BitXor</a>&lt;&amp;'b <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitxor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html#method.bitxor' class='fnname'>bitxor</a>(self, rhs: &amp;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Performs logical <em>xor</em> between each component of the <code>lhs</code> vector
+and the corresponding component of the <code>rhs</code> vector, producing a new vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>) <span class='op'>^</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>true</span>, <span class='boolval'>false</span>);
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>u</span>, <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span> <span class='op'>^</span> <span class='boolval'>true</span>, <span class='boolval'>false</span> <span class='op'>^</span> <span class='boolval'>true</span>, <span class='boolval'>true</span> <span class='op'>^</span> <span class='boolval'>false</span>));
+</pre>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html' title='core::ops::BitXor'>BitXor</a>&lt;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitxor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html#method.bitxor' class='fnname'>bitxor</a>(self, rhs: <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>lhs ^ &amp;rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'b&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html' title='core::ops::BitXor'>BitXor</a>&lt;&amp;'b <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitxor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html#method.bitxor' class='fnname'>bitxor</a>(self, rhs: &amp;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs ^ rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html' title='core::ops::BitXor'>BitXor</a>&lt;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitxor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html#method.bitxor' class='fnname'>bitxor</a>(self, rhs: <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs ^ &amp;rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html' title='core::ops::BitXor'>BitXor</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt; for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitxor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html#method.bitxor' class='fnname'>bitxor</a>(self, rhs: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Performs logical <em>xor</em> between each component of a vector
+and a scalar, producing a new vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>) <span class='op'>^</span> <span class='boolval'>true</span>;
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>u</span>, <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span> <span class='op'>^</span> <span class='boolval'>true</span>, <span class='boolval'>false</span> <span class='op'>^</span> <span class='boolval'>true</span>, <span class='boolval'>true</span> <span class='op'>^</span> <span class='boolval'>true</span>));
+</pre>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html' title='core::ops::BitXor'>BitXor</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>&gt; for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.bitxor' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.BitXor.html#method.bitxor' class='fnname'>bitxor</a>(self, rhs: <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>&amp;lhs ^ rhs</code>.</p>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl&lt;'a&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.Not.html' title='core::ops::Not'>Not</a> for &amp;'a <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.not' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.Not.html#method.not' class='fnname'>not</a>(self) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Applies logical negation to each component of a vector, producing a new vector.</p>
+
+<h1 id="examples" class='section-header'><a
+                           href="#examples">Examples</a></h1><pre id='rust-example-rendered' class='rust '>
+<span class='attribute'>#[<span class='ident'>macro_use</span>]</span> <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>vexyz_math</span>;
+<span class='kw'>use</span> <span class='ident'>vexyz_math</span>::<span class='op'>*</span>;
+
+<span class='kw'>let</span> <span class='ident'>u</span> <span class='op'>=</span> <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='boolval'>true</span>, <span class='boolval'>false</span>, <span class='boolval'>true</span>);
+<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='op'>!</span><span class='ident'>u</span>, <span class='macro'>bvec3</span><span class='macro'>!</span>(<span class='op'>!</span><span class='boolval'>true</span>, <span class='op'>!</span><span class='boolval'>false</span>, <span class='op'>!</span><span class='boolval'>true</span>));
+</pre>
+</div></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.Not.html' title='core::ops::Not'>Not</a> for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='assoc_type.Output' class='type'><a class='stability Unmarked' title='No stability level'></a><code>type Output = <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.not' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.Not.html#method.not' class='fnname'>not</a>(self) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<div class='docblock'><p>Shorthand for <code>!&amp;arg</code>.</p>
+</div></div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h4>
+<h4 id='method.clone_from' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='method.eq' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.ne' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a>) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../vexyz_math/struct.Vec3b.html' title='vexyz_math::Vec3b'>Vec3b</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='http://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='http://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='http://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "vexyz_math";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

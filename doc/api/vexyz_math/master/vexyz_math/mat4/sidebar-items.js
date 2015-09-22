@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["Mat4Mat4Ops",""]],"struct":[["Mat4","Column major matrix with 4 columns and 4 rows."]]});

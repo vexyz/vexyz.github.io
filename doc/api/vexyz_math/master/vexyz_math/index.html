@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `vexyz_math` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, vexyz_math">
+
+    <title>vexyz_math - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'vexyz_math', ty: 'mod', relpath: '../'};</script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>vexyz_math</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-0' href='../src/vexyz_math/lib.rs.html#1-44'>[src]</a></span></h1>
+<h2 id='macros' class='section-header'><a href="#macros">Macros</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.bvec2!.html'
+                               title='vexyz_math::bvec2!'>bvec2!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 2-dimensional vectors with boolean components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.bvec3!.html'
+                               title='vexyz_math::bvec3!'>bvec3!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 3-dimensional vectors with boolean components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.bvec4!.html'
+                               title='vexyz_math::bvec4!'>bvec4!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 4-dimensional vectors with boolean components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.ivec2!.html'
+                               title='vexyz_math::ivec2!'>ivec2!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 2-dimensional vectors with integer components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.ivec3!.html'
+                               title='vexyz_math::ivec3!'>ivec3!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 3-dimensional vectors with integer components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.ivec4!.html'
+                               title='vexyz_math::ivec4!'>ivec4!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 4-dimensional vectors with integer components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.mat2!.html'
+                               title='vexyz_math::mat2!'>mat2!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 2x2 column major matrices.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.mat3!.html'
+                               title='vexyz_math::mat3!'>mat3!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 3x3 column major matrices.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.mat4!.html'
+                               title='vexyz_math::mat4!'>mat4!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 4x4 column major matrices.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.quat!.html'
+                               title='vexyz_math::quat!'>quat!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new quaternions.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.vec2!.html'
+                               title='vexyz_math::vec2!'>vec2!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 2-dimensional vectors with floating point components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.vec3!.html'
+                               title='vexyz_math::vec3!'>vec3!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 3-dimensional vectors with floating point components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='macro' href='macro.vec4!.html'
+                               title='vexyz_math::vec4!'>vec4!</a></td>
+                        <td class='docblock short'><p>Builder macro for creating new 4-dimensional vectors with floating point components.</p>
+</td>
+                    </tr>
+                </table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Mat2.html'
+                               title='vexyz_math::Mat2'>Mat2</a></td>
+                        <td class='docblock short'><p>Column major matrix with 2 columns and 2 rows.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Mat3.html'
+                               title='vexyz_math::Mat3'>Mat3</a></td>
+                        <td class='docblock short'><p>Column major matrix with 3 columns and 3 rows.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Mat4.html'
+                               title='vexyz_math::Mat4'>Mat4</a></td>
+                        <td class='docblock short'><p>Column major matrix with 4 columns and 4 rows.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Quat.html'
+                               title='vexyz_math::Quat'>Quat</a></td>
+                        <td class='docblock short'><p>Quaternion with 4 floating-point components <code>a</code>, <code>b</code>, <code>c</code>, and <code>d</code>.
+Unit quaternions represent rotation.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec2.html'
+                               title='vexyz_math::Vec2'>Vec2</a></td>
+                        <td class='docblock short'><p>2-dimensional vector with floating point <code>x</code>, and <code>y</code> components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec2b.html'
+                               title='vexyz_math::Vec2b'>Vec2b</a></td>
+                        <td class='docblock short'><p>2-dimensional vector with boolean <code>x</code>, and <code>y</code> components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec2i.html'
+                               title='vexyz_math::Vec2i'>Vec2i</a></td>
+                        <td class='docblock short'><p>2-dimensional vector with integer <code>x</code>, and <code>y</code> components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec3.html'
+                               title='vexyz_math::Vec3'>Vec3</a></td>
+                        <td class='docblock short'><p>3-dimensional vector with floating point <code>x</code>, <code>y</code>, and <code>z</code> components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec3b.html'
+                               title='vexyz_math::Vec3b'>Vec3b</a></td>
+                        <td class='docblock short'><p>3-dimensional vector with boolean <code>x</code>, <code>y</code>, and <code>z</code> components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec3i.html'
+                               title='vexyz_math::Vec3i'>Vec3i</a></td>
+                        <td class='docblock short'><p>3-dimensional vector with integer <code>x</code>, <code>y</code>, and <code>z</code> components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec4.html'
+                               title='vexyz_math::Vec4'>Vec4</a></td>
+                        <td class='docblock short'><p>4-dimensional vector with floating point <code>x</code>, <code>y</code>, <code>z</code>, and <code>w</code> components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec4b.html'
+                               title='vexyz_math::Vec4b'>Vec4b</a></td>
+                        <td class='docblock short'><p>4-dimensional vector with boolean <code>x</code>, <code>y</code>, <code>z</code>, and <code>w</code> components.</p>
+</td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Vec4i.html'
+                               title='vexyz_math::Vec4i'>Vec4i</a></td>
+                        <td class='docblock short'><p>4-dimensional vector with integer <code>x</code>, <code>y</code>, <code>z</code>, and <code>w</code> components.</p>
+</td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.FloatOps.html'
+                               title='vexyz_math::FloatOps'>FloatOps</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Mat2Mat2Ops.html'
+                               title='vexyz_math::Mat2Mat2Ops'>Mat2Mat2Ops</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Mat3Mat3Ops.html'
+                               title='vexyz_math::Mat3Mat3Ops'>Mat3Mat3Ops</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Mat4Mat4Ops.html'
+                               title='vexyz_math::Mat4Mat4Ops'>Mat4Mat4Ops</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.QuatQuatOps.html'
+                               title='vexyz_math::QuatQuatOps'>QuatQuatOps</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.QuatVec3Ops.html'
+                               title='vexyz_math::QuatVec3Ops'>QuatVec3Ops</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Vec2Ops.html'
+                               title='vexyz_math::Vec2Ops'>Vec2Ops</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Vec2iOps.html'
+                               title='vexyz_math::Vec2iOps'>Vec2iOps</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Vec3Ops.html'
+                               title='vexyz_math::Vec3Ops'>Vec3Ops</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Vec3iOps.html'
+                               title='vexyz_math::Vec3iOps'>Vec3iOps</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Vec4Ops.html'
+                               title='vexyz_math::Vec4Ops'>Vec4Ops</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='trait' href='trait.Vec4iOps.html'
+                               title='vexyz_math::Vec4iOps'>Vec4iOps</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "vexyz_math";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["QuatQuatOps",""],["QuatVec3Ops",""]],"struct":[["Quat","Quaternion with 4 floating-point components `a`, `b`, `c`, and `d`. Unit quaternions represent rotation."]]});
